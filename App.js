@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import DrawerNavigator from './Navigator/DrawerNavigator'
+import DrawerNavigator from './navigator/DrawerNavigator';
+import AttendanceHistory from './pages/AttendanceHistoryPage';
 
 export default class App extends Component{
   render(){
     return(
-      <View style={styles.container}>
-        <DrawerNavigator/>
-      </View>
+      <DrawerNavigator/>
     )
   }
 }

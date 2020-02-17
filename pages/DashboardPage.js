@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
 
-export default class Dashboard extends Component{
+export default class DashboardPage extends Component{
+
+  static navigationOptions = {
+    drawerLabel: "Dashboard",
+  };
+
+
   render(){
     return(
       <View style={styles.container}>
