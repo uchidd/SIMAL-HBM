@@ -3,6 +3,8 @@ import { createAppContainer } from 'react-navigation';
 import { createDrawerNavigator } from 'react-navigation-drawer';
 import DashboardPage from '../pages/DashboardPage';
 import AttendanceHistoryPage from '../pages/AttendanceHistoryPage';
+import DataEmployeePage from '../pages/DataEmployeePage';
+import DPOPage from '../pages/DPOPage'
 
 export default class DrawerNavigator extends Component{
     render(){
@@ -15,6 +17,8 @@ export default class DrawerNavigator extends Component{
 const AppDrawerNavigator = createDrawerNavigator({
     Dashboard: {screen: DashboardPage},
     AttendanceHistory: {screen: AttendanceHistoryPage},
+    DataEmployee: {screen: DataEmployeePage},
+    DPO: {screen: DPOPage}
 },{
     initialRouteName: 'Dashboard',
     drawerWidth : 304,

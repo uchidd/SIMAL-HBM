@@ -11,12 +11,12 @@ import {
 import Header from "../components/Header";
 import HeaderSearch from "../components/HeaderSearch";
 import { DrawerActions } from "react-navigation-drawer";
-import CardDataEmployee from "../cards/cardDataEmployee";
+import CardDPO from "../cards/cardDPO";
 import Icon from "react-native-vector-icons/FontAwesome5";
 
-export default class DataEmployeePage extends Component {
+export default class DPOPage extends Component {
   static navigationOptions = {
-    drawerLabel: "Data Karyawan",
+    drawerLabel: "Daftar Pencarian Orang",
   };
 
   constructor(props) {
@@ -65,7 +65,7 @@ export default class DataEmployeePage extends Component {
       <View style={styles.container}>
         {this.state.headerview ? (
           <Header
-            title={"Data Karyawan"}
+            title={"Daftar Pencarian Orang"}
             pressIconBars={() =>
               this.props.navigation.dispatch(DrawerActions.openDrawer())
             }
@@ -88,7 +88,7 @@ export default class DataEmployeePage extends Component {
             style={{ marginTop: 3, marginBottom: 3 }}
             data={this.state.dataSource}
             renderItem={({ item }) => (
-              <CardDataEmployee
+              <CardDPO
                 id={item.id}
                 name={item.name}
                 email={item.email}
