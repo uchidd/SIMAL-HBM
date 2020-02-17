@@ -20,7 +20,7 @@ export default class DashboardPage extends Component{
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#D3D3D3',
     alignItems: 'center',
     justifyContent: 'center',
   },
