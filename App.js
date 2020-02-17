@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import DrawerNavigator from './navigator/DrawerNavigator';
+import DrawerNavigator from './Navigator/DrawerNavigator';
 import AttendanceHistory from './pages/AttendanceHistoryPage';
 
 export default class App extends Component{

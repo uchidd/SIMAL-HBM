@@ -6,7 +6,7 @@ import { Header } from "../components/Header";
 export default class AttendanceHistoryPage extends Component {
 
   static navigationOptions = {
-    drawerLabel: "AttendanceHistory",
+    drawerLabel: "Attendance History",
   };
 
   constructor(props) {
