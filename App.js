@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import DrawerNavigator from 'react-navigation-drawer/lib/typescript/src/navigators/createDrawerNavigator';
+import DrawerNavigator from 'react-navigation-drawer';
 
 export default class App extends Component{
   render(){
