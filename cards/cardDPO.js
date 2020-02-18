@@ -10,7 +10,8 @@ import {
 import Icon from "react-native-vector-icons/FontAwesome5";
 // import ModalOptionAction from "../modal/modalOptionAction";
 // import ModalAlertDialog from "../modal/modalAlertDialog";
-// import ModalDetailPrinciple from "../modal_details/modalDetailPrinciple";
+import ModalDataEmployrr from "../modal_details/modalDetailDataEmployee";
+import ModalDetailDPO from "../modal_details/modalDetailDPO";
 // import ModalEditPrinciple from "../modal_edit/modalEditPrinciple";
 
 export default class CardDPO extends Component {
@@ -82,13 +83,13 @@ export default class CardDPO extends Component {
             />
           </View> */}
         </TouchableOpacity>
-        {/* <Modal
+        <Modal
           animationType={"fade"}
           transparent={true}
           visible={this.state.isModalViewDataVisible}
           onRequestClose={() => this._hideModalViewData()}
         >
-          <ModalDetailPrinciple
+          <ModalDetailDPO
             hideModalViewData={() => this._hideModalViewData()}
             idModal={this.props.id}
             nameModal={this.props.name}
@@ -105,7 +106,7 @@ export default class CardDPO extends Component {
           visible={this.state.isModalOptionActionVisible}
           onRequestClose={() => this._hideModalOptionAction()}
         >
-          <ModalOptionAction
+          {/* <ModalOptionAction
             hideModalOptionAction={() => this._hideModalOptionAction()}
             showModalEdit={() =>
               this._hideModalOptionActionAndShowModalEditData()
@@ -113,9 +114,9 @@ export default class CardDPO extends Component {
             showModalAlertDialog={() =>
               this._hideModalOptionActionAndShowModalAlertDialog()
             }
-          />
+          /> */}
         </Modal>
-        <Modal
+        {/* <Modal
           animationType={"fade"}
           transparent={true}
           visible={this.state.isModalEditDataVisible}

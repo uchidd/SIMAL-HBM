@@ -6,7 +6,8 @@ import {
   TouchableOpacity,
   LayoutAnimation,
   FlatList,
-  SafeAreaView
+  SafeAreaView,
+  YellowBox
 } from "react-native";
 import Header from "../components/Header";
 // import HeaderSearch from "../components/HeaderSearch";
@@ -61,6 +62,8 @@ export default class DPOPage extends Component {
   }
 
   render() {
+    YellowBox.ignoreWarnings([ 'VirtualizedLists should never be nested', // TODO: Remove when fixed 
+    ]);
     return (
       <View style={styles.container}>
         {this.state.headerview ? (
@@ -82,8 +85,8 @@ export default class DPOPage extends Component {
           />
         ) : null} */}
 
-        {/* <ScrollView> */}
-          <SafeAreaView>
+        <ScrollView>
+          {/* <SafeAreaView> */}
           <FlatList
             style={{ marginTop: 3, marginBottom: 3 }}
             data={this.state.dataSource}
@@ -101,8 +104,8 @@ export default class DPOPage extends Component {
             enableEmptySections={true}
             keyExtractor={(item, index) => index.toString()}
           />
-          </SafeAreaView>
-        {/* </ScrollView> */}
+          {/* </SafeAreaView> */}
+        </ScrollView>
           {/* <TouchableOpacity
             activeOpacity={0.5}
             onPress={this.SampleFunction}
