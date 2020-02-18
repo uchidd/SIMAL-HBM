@@ -88,7 +88,7 @@ export default class DPOPage extends Component {
         <ScrollView>
           {/* <SafeAreaView> */}
           <FlatList
-            style={{ marginTop: 3, marginBottom: 3 }}
+            // style={{ marginTop: 3, marginBottom: 3 }}
             data={this.state.dataSource}
             renderItem={({ item }) => (
               <CardDPO

@@ -160,11 +160,13 @@ const styles = StyleSheet.create({
     backgroundColor: "transparent"
   },
   firstLayer: {
-    marginHorizontal: 6,
-    marginVertical: 3,
+    // marginHorizontal: 6,
+    // marginVertical: 3,
     height: 56,
     backgroundColor: "#FFFFFF",
-    borderRadius: 5,
+    borderRadius: 1,
+    borderBottomWidth : 1,
+    borderBottomColor: "#2A4580",
     flexDirection: "row"
   },
   nameView: {

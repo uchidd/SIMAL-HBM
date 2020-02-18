@@ -88,7 +88,7 @@ export default class DataEmployeePage extends Component {
         <ScrollView>
           {/* <SafeAreaView> */}
           <FlatList
-            style={{ marginTop: 3, marginBottom: 3 }}
+            // style={{ marginTop: 3, marginBottom: 3 }}
             data={this.state.dataSource}
             renderItem={({ item }) => (
               <CardDataEmployee
