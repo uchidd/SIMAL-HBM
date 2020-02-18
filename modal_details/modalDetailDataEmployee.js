@@ -13,7 +13,7 @@ export default class ModalDetailDataEmployee extends Component {
                     <View style={styles.contentView}>
                         <View style={styles.topRow}>
                             <View style={styles.leftView}>
-                                <Text style={styles.text}>Nama</Text>
+                                <Text style={styles.text}>Nama Lengkap</Text>
                             </View>
                             <View style={styles.rightView}>
                                 <Text style={styles.text}>{this.props.nameModal}</Text>
@@ -21,10 +21,34 @@ export default class ModalDetailDataEmployee extends Component {
                         </View>
                         <View style={styles.row}>
                             <View style={styles.leftView}>
-                                <Text style={styles.text}>Name</Text>
+                                <Text style={styles.text}>Role</Text>
                             </View>
                             <View style={styles.rightView}>
-                                <Text style={styles.text}>{this.props.nameModal}</Text>
+                                <Text style={styles.text}>{this.props.emailModal}</Text>
+                            </View>
+                        </View>
+                        <View style={styles.row}>
+                            <View style={styles.leftView}>
+                                <Text style={styles.text}>Base Markas</Text>
+                            </View>
+                            <View style={styles.rightView}>
+                                <Text style={styles.text}>{this.props.emailModal}</Text>
+                            </View>
+                        </View>
+                        <View style={styles.row}>
+                            <View style={styles.leftView}>
+                                <Text style={styles.text}>NIK</Text>
+                            </View>
+                            <View style={styles.rightView}>
+                                <Text style={styles.text}>{this.props.emailModal}</Text>
+                            </View>
+                        </View>
+                        <View style={styles.row}>
+                            <View style={styles.leftView}>
+                                <Text style={styles.text}>NIP</Text>
+                            </View>
+                            <View style={styles.rightView}>
+                                <Text style={styles.text}>{this.props.emailModal}</Text>
                             </View>
                         </View>
                         <View style={styles.row}>
@@ -37,7 +61,7 @@ export default class ModalDetailDataEmployee extends Component {
                         </View>
                         <View style={styles.row}>
                             <View style={styles.leftView}>
-                                <Text style={styles.text}>Phone</Text>
+                                <Text style={styles.text}>No. Telp</Text>
                             </View>
                             <View style={styles.rightView}>
                                 <Text style={styles.text}>{this.props.phoneModal}</Text>
@@ -45,7 +69,7 @@ export default class ModalDetailDataEmployee extends Component {
                         </View>
                         <View style={styles.row}>
                             <View style={styles.leftView}>
-                                <Text style={styles.text}>Address</Text>
+                                <Text style={styles.text}>Tempat/Tanggal Lahir</Text>
                             </View>
                             <View style={styles.rightView}>
                                 <Text style={styles.text}>{this.props.addressModal}</Text>
@@ -53,7 +77,7 @@ export default class ModalDetailDataEmployee extends Component {
                         </View>
                         <View style={styles.row}>
                             <View style={styles.leftView}>
-                                <Text style={styles.text}>PIC Name</Text>
+                                <Text style={styles.text}>Alamat</Text>
                             </View>
                             <View style={styles.rightView}>
                                 <Text style={styles.text}>{this.props.pic_nameModal}</Text>
@@ -61,7 +85,7 @@ export default class ModalDetailDataEmployee extends Component {
                         </View>
                         <View style={styles.rowBottom}>
                             <View style={styles.leftView}>
-                                <Text style={styles.text}>PIC Contact</Text>
+                                <Text style={styles.text}>Tanggal Gabung</Text>
                             </View>
                             <View style={styles.rightView}>
                                 <Text style={styles.text}>{this.props.pic_contactModal}</Text>

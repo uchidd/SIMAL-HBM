@@ -6,10 +6,11 @@ import {
   TouchableOpacity,
   LayoutAnimation,
   FlatList,
-  SafeAreaView
+  SafeAreaView,
+  YellowBox
 } from "react-native";
 import Header from "../components/Header";
-import HeaderSearch from "../components/HeaderSearch";
+// import HeaderSearch from "../components/HeaderSearch";
 import { DrawerActions } from "react-navigation-drawer";
 import CardDataEmployee from "../cards/cardDataEmployee";
 import Icon from "react-native-vector-icons/FontAwesome5";
@@ -61,6 +62,8 @@ export default class DataEmployeePage extends Component {
   }
 
   render() {
+    YellowBox.ignoreWarnings([ 'VirtualizedLists should never be nested', // TODO: Remove when fixed 
+    ]);
     return (
       <View style={styles.container}>
         {this.state.headerview ? (
@@ -74,16 +77,16 @@ export default class DataEmployeePage extends Component {
           />
         ) : null}
 
-        {this.state.searchview ? (
+        {/* {this.state.searchview ? (
           <HeaderSearch
             pressIconBack={() => this._showHeader()}
             ocText={text => this.setState({ text })}
             searchFunction={() => this._buttonSearch()}
           />
-        ) : null}
+        ) : null} */}
 
-        {/* <ScrollView> */}
-          <SafeAreaView>
+        <ScrollView>
+          {/* <SafeAreaView> */}
           <FlatList
             style={{ marginTop: 3, marginBottom: 3 }}
             data={this.state.dataSource}
@@ -101,8 +104,8 @@ export default class DataEmployeePage extends Component {
             enableEmptySections={true}
             keyExtractor={(item, index) => index.toString()}
           />
-          </SafeAreaView>
-        {/* </ScrollView> */}
+          {/* </SafeAreaView> */}
+        </ScrollView>
           {/* <TouchableOpacity
             activeOpacity={0.5}
             onPress={this.SampleFunction}

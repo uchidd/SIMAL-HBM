@@ -9,7 +9,7 @@ import {
   SafeAreaView
 } from "react-native";
 import Header from "../components/Header";
-import HeaderSearch from "../components/HeaderSearch";
+// import HeaderSearch from "../components/HeaderSearch";
 import { DrawerActions } from "react-navigation-drawer";
 import CardDPO from "../cards/cardDPO";
 import Icon from "react-native-vector-icons/FontAwesome5";
@@ -74,13 +74,13 @@ export default class DPOPage extends Component {
           />
         ) : null}
 
-        {this.state.searchview ? (
+        {/* {this.state.searchview ? (
           <HeaderSearch
             pressIconBack={() => this._showHeader()}
             ocText={text => this.setState({ text })}
             searchFunction={() => this._buttonSearch()}
           />
-        ) : null}
+        ) : null} */}
 
         {/* <ScrollView> */}
           <SafeAreaView>

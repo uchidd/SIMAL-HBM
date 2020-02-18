@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { View, StyleSheet, Text, StatusBar } from "react-native";
-<<<<<<< HEAD
 import Icon from "react-native-vector-icons/FontAwesome5";
 
 export default class Header extends Component {
@@ -20,41 +19,7 @@ export default class Header extends Component {
                   <Icon style={styles.icon} name={'ellipsis-v'} color={'#FFFFFF'} size={24}/>
                 </View>
             </View>
-=======
-import Icon from "react-native-vector-icons/FontAwesome";
-// import { Menu, MenuOptions, MenuOption, MenuTrigger} from "react-native-popup-menu";
-
-export default class Header extends Component {
-
-  render() {
-    return (
-      <View style={styles.container}>
-        <StatusBar hidden={true} />
-        <View style={styles.header} headerIconBars>
-          <View style={styles.headerIconBars}>
-            <Icon style={styles.icon} name={'bars'} color={'#F8F9FA'} size={24} onPress={this.props.pressIconBars} />
-          </View>
-          <View style={styles.headerTitle}>
-            <Text style={styles.textHeader}>{this.props.title}</Text>
-          </View>
-          <View style={styles.headerIconSearch}>
-            <Icon style={styles.icon} name={'search'} color={this.props.iconSearchColor} size={24} onPress={this.props.pressIconSearch} />
-          </View>
-          <View style={styles.headerIconEllipsis}>
-            {/* <Menu>
-              <MenuTrigger >
-                <Icon style={styles.icon} name={'ellipsis-v'} color={'#F8F9FA'} size={24} />
-              </MenuTrigger>
-              <MenuOptions>
-                <MenuOption style={styles.menuContent} value={"Logout"} onSelect={value => alert(`You Clicked : ${value}`)}>
-                  <Text style={styles.menuText}>Logout</Text>
-                </MenuOption>
-              </MenuOptions>
-            </Menu> */}
-          </View>
->>>>>>> 3321968517855bd27a9d6bd691ba5d7d46d368ca
         </View>
-      </View>
     )
   }
 }
@@ -94,16 +59,10 @@ const styles = StyleSheet.create({
     color: "#fff",
     marginLeft: 16
   },
-<<<<<<< HEAD
   textHeader : {
     fontSize : 22,
     color : "#FFFFFF",
     marginLeft  : 16
-=======
-  menuContent: {
-    justifyContent: "center",
-    backgroundColor: '#FFFFFF',
->>>>>>> 3321968517855bd27a9d6bd691ba5d7d46d368ca
   },
   menuText: {
     fontSize: 16,
